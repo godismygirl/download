@@ -104,6 +104,7 @@
 			if ('download' in anchor) { //html5 A[download]
 				anchor.href = url;
 				anchor.setAttribute("download", fileName);
+				anchor.setAttribute("type", mimeType);
 				anchor.className = "download-js-link";
 				anchor.innerHTML = "downloading...";
 				anchor.style.display = "none";
